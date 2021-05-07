@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+:root {
+    --dark: #27282D;
+    --red: #dd2c3b;
+    --white: #f8f8f8;
+}
+
+body {
+    background-color: var(--dark);
+    font-size: 16px;
+}
+
+.form-container {
+    padding: 10px;
+}
+
+.generic {
+    display: block;
+    margin: 10px auto;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 2px;
+    border: 0;
+    font-size: 1rem;
+    padding: 20px;
+}
+
+.title,
+.button {
+    color: var(--white);
+    text-align: center;
+}
+
+.form-container h2 {
+    padding: 20px 0;
+    font-size: 1.5rem;
+}
+
+.name,
+.email,
+.phone {
+    height: 30px;
+}
+
+.message {
+    resize: vertical;
+    height: 120px;
+}
+
+.button {
+    cursor: pointer;
+    background-color: var(--red);
+    height: 60px;
+    font-size: 1.1rem;
+    color: var(--white);
+    font-weight: bold;
+}
+
+.footer {
+    color: var(--white);
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-weight: bold;
+}
+
+.footer a {
+    text-decoration: none;
+    transition: .2s;
+    color: var(--white);
+}
+
+.footer a:hover {
+    color: var(--red);
+    transition: .2s;
+}
+
+.red-color {
+    color: var(--red);
+}
