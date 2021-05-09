@@ -12,7 +12,7 @@
 
 <hr>
 
-### 2. Modern Form
+### 2. <a href="https://github.com/palomamorais-developer/Front-end-projects/tree/main/Forms/2-modern-form">Modern Form</a>
 ⚙ HTML, SCSS, BEM, Flexbox
 
 ![](https://media.giphy.com/media/9dRWIscogSiUOR0rcf/giphy.gif)
