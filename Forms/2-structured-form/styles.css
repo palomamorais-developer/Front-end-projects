@@ -1,0 +1,194 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  background-color: #27282D;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 100vh;
+}
+
+.contact {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  width: 100%;
+  max-width: 500px;
+  height: 500px;
+  border-radius: 5px;
+}
+.contact__title {
+  text-align: center;
+  color: #27282D;
+  font-size: 1.5rem;
+  padding-bottom: 20px;
+}
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 2px;
+  border: 0;
+  padding: 10px;
+}
+.contact__form__field {
+  position: relative;
+}
+.contact__form__field__icon {
+  position: absolute;
+  left: 0;
+  padding: 10px;
+  color: #27282D;
+}
+.contact__form__field__input {
+  width: 100%;
+  height: 35px;
+  max-width: 400px;
+  padding: 10px 40px;
+  color: #27282D;
+  font-size: 1rem;
+  transition: 0.5s;
+  outline: none;
+  border: 2px solid #27282D;
+  border-radius: 4px;
+}
+.contact__form__field__input:focus {
+  border: 2px solid dodgerblue;
+  box-shadow: 0 0 3px 0 dodgerblue;
+}
+.contact__form__field__input:focus + .contact__form__field__icon {
+  color: dodgerblue;
+}
+.contact__form__label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact__form__label--primary {
+  color: #757577;
+  font-size: 0.8rem;
+  position: relative;
+  padding-left: 20px;
+  cursor: pointer;
+  user-select: none;
+  /* Hide the browser's default checkbox */
+}
+.contact__form__label--primary__checkbox--hidden {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.contact__form__label--primary__checkbox--enabled::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 2px;
+}
+.contact__form__label--primary__checkbox--hidden:checked ~ .contact__form__label--primary__checkbox--enabled::before {
+  content: "";
+}
+.contact__form__label--primary:hover .contact__form__label--primary__checkbox--hidden ~ .contact__form__label--primary__checkbox--enabled::before {
+  color: dodgerblue;
+}
+.contact__form__label--secondary {
+  color: #757577;
+  font-size: 0.8rem;
+  transition: 0.5s;
+}
+.contact__form__label--secondary--link {
+  color: #757577;
+  text-decoration: none;
+}
+.contact__form__label--secondary--link:hover {
+  color: dodgerblue;
+  border-bottom: 1px solid dodgerblue;
+}
+.contact__form__btn {
+  cursor: pointer;
+  color: #fff;
+  background-color: #27282D;
+  height: 35px;
+  font-size: 1rem;
+  border: 0;
+  border-radius: 4px;
+  padding: 20px;
+  text-align: center;
+}
+.contact__form__btn:hover {
+  background-color: #131314;
+  transition: 0.3s;
+}
+.contact__separator {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+.contact__separator__text--center {
+  padding: 0 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #27282D;
+}
+.contact__separator__line--primary, .contact__separator__line--secondary {
+  background-color: #9c9c9c;
+  padding: 1px 80px;
+}
+.contact__social-login {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  padding-bottom: 10px;
+}
+.contact__social-login--primary, .contact__social-login--secondary {
+  padding: 15px;
+  width: 250px;
+  position: relative;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.contact__social-login--primary--text, .contact__social-login--secondary--text {
+  padding-left: 60px;
+}
+.contact__social-login--primary__icon, .contact__social-login--secondary__icon {
+  position: absolute;
+  left: 30px;
+  top: 40%;
+  transform: scale(1.8);
+}
+.contact__social-login--primary {
+  background-color: #385898;
+  transition: 0.5s;
+}
+.contact__social-login--primary:hover {
+  background-color: #2b406d;
+}
+.contact__social-login--secondary {
+  background-color: #e04638;
+}
+.contact__social-login--secondary:hover {
+  background-color: #bd4135;
+}
+
+/*# sourceMappingURL=styles.css.map */

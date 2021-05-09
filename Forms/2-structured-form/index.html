@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="contact">
+        <h2 class="contact__title"> Member Login</h2>
+        <form class="contact__form">
+            <div class="contact__form__field">
+                <input type="text" name="username" class="contact__form__field__input" placeholder="Username">
+                <i class="fas fa-user contact__form__field__icon"></i>
+            </div>
+            <div class="contact__form__field">
+                <input type="password" name="password" class="contact__form__field__input" placeholder="Password">
+                <i class="fas fa-lock contact__form__field__icon"></i>
+            </div>
+            <div class="contact__form__label">
+                <label class="contact__form__label--primary"> Remember me
+                        <input type="checkbox" class="contact__form__label--primary__checkbox--hidden" checked="checked">
+                        <span class="contact__form__label--primary__checkbox--enabled"></span>
+                </label>
+                <label for="" class="contact__form__label--secondary">
+
+                    <a href=" "class="contact__form__label--secondary--link"> Forgot password?</a>
+                </label>
+            </div>
+            <input type="submit " value="LOGIN " class="contact__form__btn">
+        </form>
+        <div class="contact__separator">
+            <div class="contact__separator__line--primary"></div>
+            <p class="contact__separator__text--center">Or</p>
+            <div class="contact__separator__line--secondary"></div>
+        </div>
+        <div class="contact__social-login">
+            <div class="contact__social-login--primary">
+                <span class="contact__social-login--primary--text"> Login with Facebook</span>
+                <i class="fab fa-facebook-square contact__social-login--primary__icon"></i>
+            </div>
+            <div class="contact__social-login--secondary">
+                <span class="contact__social-login--secondary--text"> Login with Google</span>
+                <i class="fab fa-google-plus-square contact__social-login--secondary__icon"></i>
+            </div>
+        </div>
+        <label class="contact__form__label--secondary">
+            Not a member?
+            <a href=" "class="contact__form__label--secondary--link">Sign up</a>
+        </label>
+    </div>
+</body>
