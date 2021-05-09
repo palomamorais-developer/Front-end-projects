@@ -10,10 +10,12 @@ body {
   background-color: #27282D;
   font-size: 16px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   padding: 20px;
   height: 100vh;
+  position: relative;
 }
 
 .contact {
@@ -189,6 +191,39 @@ body {
 }
 .contact__social-login--secondary:hover {
   background-color: #bd4135;
+}
+
+.footer {
+  color: #f8f8f8;
+  width: 100%;
+  padding: 20px;
+  font-weight: bold;
+}
+.footer__line {
+  padding: 1px;
+  width: 100%;
+  background-color: #dd2c3b;
+}
+.footer__author {
+  padding-top: 10px;
+  text-align: center;
+  position: relative;
+}
+.footer__author__icon {
+  color: #dd2c3b;
+  transition: 0.5s;
+  padding: 0 2px;
+}
+.footer__author__icon:hover {
+  transform: scale(1.1);
+}
+.footer__author__link {
+  text-decoration: none;
+  transition: 0.5s;
+  color: #f8f8f8;
+}
+.footer__author__link:hover {
+  color: #dd2c3b;
 }
 
 /*# sourceMappingURL=styles.css.map */

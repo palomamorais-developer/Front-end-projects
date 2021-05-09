@@ -9,10 +9,12 @@
             background-color: #27282D;
             font-size: 16px;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            justify-content: space-between;
             align-items: center;
             padding: 20px;
             height: 100vh;
+            position: relative;
         }
         
         .contact {
@@ -189,6 +191,39 @@
                     background-color: #e04638;
                     &:hover {
                         background-color: #bd4135;
+                    }
+                }
+            }
+        }
+        
+        .footer {
+            color: #f8f8f8;
+            width: 100%;
+            padding: 20px;
+            font-weight: bold;
+            &__line {
+                padding: 1px;
+                width: 100%;
+                background-color: #dd2c3b;
+            }
+            &__author {
+                padding-top: 10px;
+                text-align: center;
+                position: relative;
+                &__icon {
+                    color: #dd2c3b;
+                    transition: .5s;
+                    padding: 0 2px;
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+                &__link {
+                    text-decoration: none;
+                    transition: .5s;
+                    color: #f8f8f8;
+                    &:hover {
+                        color: #dd2c3b;
                     }
                 }
             }
