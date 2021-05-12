@@ -64,7 +64,7 @@ body {
   font-weight: 600;
   outline: none;
   transition: 0.5s;
-  padding: 15px 80px 15px 15px;
+  padding: 10px 120px 10px 10px;
 }
 .form__input:focus {
   border: 2px solid #1e90ff;
@@ -136,8 +136,8 @@ body {
   border-radius: 4px;
   font-size: 0.9rem;
   width: 100%;
-  max-width: 280px;
-  padding: 20px;
+  max-width: 315px;
+  padding: 10px;
   transition: 0.5s;
 }
 
@@ -243,7 +243,7 @@ body {
   color: #ffbb00;
 }
 
-@media only screen and (max-width: 667px) {
+@media only screen and (max-width: 768px) {
   .contact {
     max-width: 360px;
     width: 100%;
